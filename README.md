@@ -11,9 +11,9 @@ number to add a point, flick up or down to move the score, hold a team name to r
 
 | | |
 | --- | --- |
-| Version | 1.1 (versionCode 2) |
+| Version | 1.2 (versionCode 3) |
 | Size | 79,239 bytes |
-| SHA-256 | `3d218767d0ded3904fdb659b57ccb1f290e34a52c7a6cc157898559df94a8aae` |
+| SHA-256 | `34c07de08b57283febc87bf2b86030eed4facc30c316706c8921e0a9d8cf0a5d` |
 | Requires | Android 5.0 (API 21) or newer |
 | Permissions | `INTERNET`, used only when you open a scoring link |
 | Package | `com.kevin.score` |
@@ -66,6 +66,12 @@ match you already recorded, so a mistake can be fixed — the server keeps both 
 Without the app installed, the same link opens the tournament's web console in a browser instead, so
 the link always works. The app contacts only the host named in that link, and only to read the match
 and send its result.
+
+**Races are supported too.** Tap the race line to give each side a target — different targets are a
+handicap, like 11 against 9. When either side reaches theirs the app tells you the match is over and
+offers to submit the result, or to keep editing if that was a mistake.
+
+![a reached goal offering submit or keep editing](screenshots/race.png)
 
 ![a match opened from a scoring link](screenshots/linked.png)
 
