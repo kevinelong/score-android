@@ -11,11 +11,11 @@ number to add a point, flick up or down to move the score, hold a team name to r
 
 | | |
 | --- | --- |
-| Version | 1.0 (versionCode 1) |
-| Size | 62,774 bytes |
-| SHA-256 | `4b69eba8c0f6eb662aeea72134907264d3e5ec82cd6d6f5d080635b98f0107de` |
+| Version | 1.1 (versionCode 2) |
+| Size | 79,239 bytes |
+| SHA-256 | `3d218767d0ded3904fdb659b57ccb1f290e34a52c7a6cc157898559df94a8aae` |
 | Requires | Android 5.0 (API 21) or newer |
-| Permissions | **none** |
+| Permissions | `INTERNET`, used only when you open a scoring link |
 | Package | `com.kevin.score` |
 
 Check the download before installing it — on Windows
@@ -56,11 +56,27 @@ With a computer and Android platform-tools instead:
 
 ![landscape](screenshots/landscape.png)
 
+## Linked match mode
+
+If a tournament director shares a **scoring link** with you, opening it on your phone loads that match
+into the app: the two entrants appear as HOME and AWAY, you tally the points, and **Submit result**
+records the winner on the tournament server (the tallies go with it). **Correct result** reopens a
+match you already recorded, so a mistake can be fixed — the server keeps both versions.
+
+Without the app installed, the same link opens the tournament's web console in a browser instead, so
+the link always works. The app contacts only the host named in that link, and only to read the match
+and send its result.
+
+![a match opened from a scoring link](screenshots/linked.png)
+
 ## Privacy
 
-Nothing leaves the phone. The app has **no permissions at all**, no network access, no analytics and no
-third-party libraries — it is one activity and a handful of platform widgets. There is no account, no
-ads and no data collection, so there is nothing to opt out of.
+Nothing leaves the phone unless you open a tournament scoring link. Opened normally from the home
+screen, the app uses no network at all. The `INTERNET` permission exists for **linked match mode**,
+where the app talks to the host of the link you opened — to read that one match and to submit its
+result (the winner, the two team names and your tallies). No other host is contacted, there is no
+account, no ads, no analytics, no third-party libraries, and nothing is collected, so there is nothing
+to opt out of.
 
 ## Notes
 
