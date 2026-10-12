@@ -11,9 +11,9 @@ number to add a point, flick up or down to move the score, hold a team name to r
 
 | | |
 | --- | --- |
-| Version | 1.3 (versionCode 4) |
-| Size | 79,239 bytes |
-| SHA-256 | `ae18bb5f3ac4bf59b4e6d5cfb2a1e53ac160ae465cdf857d8893f223dbd71c2f` |
+| Version | 1.4 (versionCode 5) |
+| Size | 87,431 bytes |
+| SHA-256 | `6cf0081f43578850cd1482d54b95a132d96b6139d60b78d449fb34c51868e01e` |
 | Requires | Android 5.0 (API 21) or newer |
 | Permissions | `INTERNET`, used only when you open a scoring link |
 | Package | `com.kevin.score` |
@@ -47,12 +47,20 @@ With a computer and Android platform-tools instead:
 - **Add a point:** tap the big number, or the green **+**.
 - **Take a point off:** tap the red **−**.
 - **Swipe up or down anywhere on either side** to move that side by one — up adds, down subtracts.
-- **Reset a side:** the **Reset** button under its buttons.
+  The far side is drawn upside down, and its swipes are mirrored with it, so the player sitting
+  opposite reads it upright and their "up" still adds. Hold the centre bar between the halves to flip
+  it back if you are the only one scoring.
+- **Reset a side:** the **Reset** button under its buttons. In a linked match it asks first, because
+  there it clears a tally on its way to the server.
 - **Rename a team:** press and hold the name for about a second. It dims while you hold, then the
   rename dialog opens; let go early and nothing happens. Names are limited to 16 characters, and
   clearing the name restores `HOME` / `AWAY`.
-- Scores run `00`–`99` per side. Names and scores survive rotating the phone, and the screen is kept
-  awake while the app is open — a scoreboard that sleeps mid-match is useless.
+- Scores run `00`–`999` per side. A tournament race only needs two digits, but the point games it
+  supports — 14.1 and 15-ball rotation — are played to 75, 100 or 150. Names and scores survive
+  rotating the phone, and the screen is kept awake **and at full brightness** while the app is open:
+  a pool room is dim, and a scoreboard that sleeps mid-match is useless.
+- The first time you open it, a line at the bottom names the three gestures that are otherwise
+  invisible. It goes away for good once you have scored something.
 
 ![landscape](screenshots/landscape.png)
 
@@ -67,13 +75,23 @@ Without the app installed, the same link opens the tournament's web console in a
 the link always works. The app contacts only the host named in that link, and only to read the match
 and send its result.
 
+The board leads with the **table number** when the tournament has one, because that is what the
+players are listening for. If the tournament is not open for outside scoring, the link still loads it
+— entrants, table and match state, with the tallies working as a plain scoreboard — and says so, with
+**Submit result** disabled, rather than showing an error over a blank screen. Coming back to the app
+re-reads the match, so a correction made at the desk shows up without you doing anything.
+
 **Races are supported too.** Tap the race line to give each side a target — different targets are a
-handicap, like 11 against 9. When either side reaches theirs the app tells you the match is over and
+handicap, like 11 against 9. The wording follows the discipline: a games race reads "Race to 7", while
+14.1 and 15-ball rotation are scored in points and read "Points to 100". A side one point short of its
+target says "match point". When either side reaches theirs the app tells you the match is over and
 offers to submit the result, or to keep editing if that was a mistake.
 
 ![a reached goal offering submit or keep editing](screenshots/race.png)
 
-![a match opened from a scoring link](screenshots/linked.png)
+![a match opened from a scoring link, with its table](screenshots/linked.png)
+
+![a tournament that is not open for scoring: view only](screenshots/view-only.png)
 
 ## Privacy
 
