@@ -71,6 +71,9 @@ ads and no data collection, so there is nothing to opt out of.
 - **Source:** the source lives in a separate, public repository —
   [kevinelong/score](https://github.com/kevinelong/score) — with the build scripts, the tools and the
   verification harness.
-- **Licence:** none is granted by either repository. The app is free to download and use, but making
-  the source readable does not grant a licence to reuse or redistribute it. Ask if you would like one
-  added (MIT, Apache-2.0, or something else).
+- **Licence:** **`FSL-1.1-MIT`** — the [Functional Source
+  License](https://fsl.software/) ([full text](LICENSE)). In short: use, copy, modify and redistribute
+  the app freely, **including commercially**, for anything except a competing product — you may not
+  ship it as, or inside, a scoreboard that substitutes for this one. Two years after each release it
+  becomes plain MIT. This makes it source-available rather than open source; if you need different
+  terms, ask.
