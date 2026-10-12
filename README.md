@@ -68,5 +68,9 @@ ads and no data collection, so there is nothing to opt out of.
   so it installs on every Android from 5.0 up.
 - If you have an older copy installed, this release updates it in place — as long as it was signed
   with the same key, which it was.
-- **Licence:** none is granted by this repository — the app is free to download and use, and the
-  source is not published here. Ask if you would like either changed.
+- **Source:** the source lives in a separate, public repository —
+  [kevinelong/score](https://github.com/kevinelong/score) — with the build scripts, the tools and the
+  verification harness.
+- **Licence:** none is granted by either repository. The app is free to download and use, but making
+  the source readable does not grant a licence to reuse or redistribute it. Ask if you would like one
+  added (MIT, Apache-2.0, or something else).
