@@ -24,6 +24,11 @@ build is reproducible, so that hash identifies the release exactly. The same fil
 repository for a direct link:
 [`score-release.apk`](https://github.com/kevinelong/score-android/raw/main/score-release.apk).
 
+`sh verify-release.sh` does all of that in one go, against the live release: it downloads the published
+asset and compares its size, SHA-256 and tag, the hash in the release notes, and the copy committed
+here, and reads the APK's own versionName and versionCode — so a claim in this file that no longer
+matches the bytes is caught rather than shipped.
+
 ## Install
 
 Android only offers installs from the Play Store by default, so the first sideload needs one
