@@ -11,9 +11,9 @@ number to add a point, flick up or down to move the score, hold a team name to r
 
 | | |
 | --- | --- |
-| Version | 1.4 (versionCode 5) |
-| Size | 87,431 bytes |
-| SHA-256 | `6cf0081f43578850cd1482d54b95a132d96b6139d60b78d449fb34c51868e01e` |
+| Version | 1.5 (versionCode 6) |
+| Size | 91,527 bytes |
+| SHA-256 | `25d570c283a7349ca5b5c04216d19cafadd27fc8609f3572ec0f24895682f1e1` |
 | Requires | Android 5.0 (API 21) or newer |
 | Permissions | `INTERNET`, used only when you open a scoring link |
 | Package | `com.kevin.score` |
