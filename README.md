@@ -86,11 +86,19 @@ players are listening for. If the tournament is not open for outside scoring, th
 **Submit result** disabled, rather than showing an error over a blank screen. Coming back to the app
 re-reads the match, so a correction made at the desk shows up without you doing anything.
 
-**Races are supported too.** Tap the race line to give each side a target — different targets are a
-handicap, like 11 against 9. The wording follows the discipline: a games race reads "Race to 7", while
-14.1 and 15-ball rotation are scored in points and read "Points to 100". A side one point short of its
-target says "match point". When either side reaches theirs the app tells you the match is over and
-offers to submit the result, or to keep editing if that was a mistake.
+**The race comes from the bracket.** A tournament keeps a race target — a division's, or a per-match one
+for a longer final — and the app reads it when the link opens, so an ordinary match needs no setting up:
+both sides play to the bracket's target, and the race line says where it came from (`Race to 7 · from the
+bracket`, the bracket's match override, or the discipline's default when nobody set one). The wording
+follows the discipline: a games race reads "Race to 7", while 14.1 and 15-ball rotation are scored in
+points and read "Points to 100". A side one point short of its target says "match point".
+
+Tapping the race line is how you score one table differently — an uneven handicap, like 11 against 9, or
+a target nobody else is playing to. What you type is an **override**, and it is worded as the deviation
+it is (`LOCAL OVERRIDE · Race to 5 – 7 · the bracket's race is 7`), on the race line and under the name;
+the dialog's `BRACKET'S RACE` button hands the table back to the bracket. When either side reaches its
+goal the app tells you the match is over and offers to submit the result, or to keep editing if that was
+a mistake.
 
 ![a reached goal offering submit or keep editing](screenshots/race.png)
 
